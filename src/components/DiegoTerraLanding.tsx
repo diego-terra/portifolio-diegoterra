@@ -6,7 +6,8 @@ import { CustomCursor } from "@/components/CustomCursor";
 import FlyingCube from "@/components/FlyingCube";
 import { SectionDivider } from "@/components/SectionDivider";
 import wrStudio from "@/assets/screenshots/wr-studio-dental.webp";
-
+import fernandaMoraes from "@/assets/screenshots/fernanda-moraes-tpd.webp";
+import { url } from "inspector";
 /*
  * Contatos oficiais Diego Terra
  */
@@ -585,7 +586,7 @@ function PhoneMockup({
               alt={label}
               className="w-full h-auto block"
             />
-          
+
 
             {/* Fake page — hero */}
             {/* <div
@@ -708,8 +709,8 @@ function Portfolio() {
   {/* PLACEHOLDER: substituir pelos projetos reais conforme forem entregues.
       Estrutura pronta pra adicionar mais cards. */}
   const projects = [
-    { name: "Wr Studio Dental", category: "Landing Page", accent: "148", image: wrStudio, },
-    { name: "Projeto 02", category: "Site Institucional", accent: "160", image: wrStudio, },
+    { name: "Wr Studio Dental", category: "Landing Page", accent: "148", image: wrStudio, url: "https://www.tpdwellingtonrodrigues.com.br/", },
+    { name: "Fernanda Moraes", category: "Landing Page", accent: "160", image: fernandaMoraes, url: "https://www.fernandamoraestpd.com.br/", },
     { name: "Projeto 03", category: "E-commerce", accent: "140", image: wrStudio, },
   ];
 
@@ -730,7 +731,7 @@ function Portfolio() {
             <Reveal key={p.name} delay={i * 140}>
               <a
                 href="#"
-                className="group relative flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-2xl border border-border bg-surface p-6"
+                className="group relative flex aspect-[4/5] lg:aspect-[4/6] flex-col justify-between overflow-hidden rounded-2xl border border-border bg-surface p-6"
               >
                 <div
                   className="pointer-events-none absolute inset-0 opacity-40 grid-lines transition-opacity group-hover:opacity-60"
@@ -754,10 +755,15 @@ function Portfolio() {
                       {p.category}
                     </div>
                   </div>
-                  <span className="inline-flex h-9 items-center gap-1.5 rounded-full border border-border bg-background/60 px-3 text-xs text-foreground backdrop-blur-sm transition-all group-hover:border-brand group-hover:text-brand">
+                  <a
+                    href={p.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex h-9 items-center gap-1.5 rounded-full border border-border bg-background/60 px-3 text-xs text-foreground backdrop-blur-sm transition-all hover:border-brand hover:text-brand"
+                  >
                     Ver projeto
-                    <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
-                  </span>
+                    <ArrowRight className="h-3.5 w-3.5 transition-transform hover:translate-x-0.5" />
+                  </a>
                 </div>
               </a>
             </Reveal>
