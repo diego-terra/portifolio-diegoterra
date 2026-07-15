@@ -7,6 +7,7 @@ import FlyingCube from "@/components/FlyingCube";
 import { SectionDivider } from "@/components/SectionDivider";
 import wrStudio from "@/assets/screenshots/wr-studio-dental.webp";
 import fernandaMoraes from "@/assets/screenshots/fernanda-moraes-tpd.webp";
+import cavallini from "@/assets/screenshots/cavallini.webp";
 import { url } from "inspector";
 /*
  * Contatos oficiais Diego Terra
@@ -144,7 +145,7 @@ function Hero() {
           className="animate-reveal mt-6 max-w-xl text-base text-muted-foreground md:text-lg"
           style={{ animationDelay: "340ms" }}
         >
-          Desenvolvo sites modernos, rápidos e responsivos, combinando design estratégico, animações fluidas e foco na experiência do usuário para transformar visitantes em clientes.
+          Projetos desenvolvidos para transformar ideias em marcas fortes, experiências memoráveis e resultados reais.
         </p>
 
         <div
@@ -216,12 +217,15 @@ function About() {
   const skills = [
     "UI/UX Design",
     "React & TypeScript",
-    "Tailwind CSS",
-    "Motion & Interação",
-    "Copy focado em conversão",
-    "SEO técnico",
     "Performance web",
-    "Shopify & E-commerce",
+    "SEO",
+    "Landing Pages",
+    "Sites",
+    "Apps",
+    "E-commerce",
+    "Identidade Visual",
+    "Presença Digital",
+    "Design Responsivo",
   ];
   return (
     <section
@@ -287,9 +291,6 @@ function About() {
                   Designer & Desenvolvedor
                 </h3>
 
-                <p className="mt-2 text-sm text-white/70">
-                  Minas Gerais • Brasil
-                </p>
               </div>
 
               <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/40 px-4 py-2 text-[11px] uppercase tracking-[0.2em] text-white backdrop-blur-md">
@@ -308,27 +309,21 @@ function About() {
           <Reveal>
             <p className="text-eyebrow text-brand">Quem sou eu</p>
           </Reveal>
-          <Reveal delay={80}>
+          {/* <Reveal delay={80}>
             <h2 className="text-fluid-h2 mt-4 max-w-xl font-light text-foreground">
-              Design com intenção,<br />
-              código sem enrolação<span className="text-brand">.</span>
+              Design que gera confiança,<br />
+              Soluções que gera resultado<span className="text-brand">.</span>
             </h2>
-          </Reveal>
+          </Reveal> */}
 
           <Reveal delay={160}>
             <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
               <p>
-                Sou o Diego — designer e desenvolvedor baseado em São Paulo.
-                Faz mais de 6 anos que respiro web: já passei por agências,
-                produtos SaaS e projetos autorais, e o que mais me move é
-                transformar ideia em página que{" "}
-                <span className="text-foreground">funciona</span> — não só bonita
-                no Behance, mas que gera cliente de verdade.
-              </p>
-              <p>
-                Aqui não tem template. Cada projeto começa em uma conversa
-                honesta, passa por copy, wireframe, design e vira código escrito
-                à mão — rápido, responsivo, acessível e pronto pra escalar.
+                Transformo ideias em experiências digitais que unem design, estratégia e tecnologia.
+
+                Com experiência em design gráfico, identidade visual e desenvolvimento front-end, crio sites rápidos, landing pages e apps, responsivos e exclusivos para empresas que querem transmitir profissionalismo e crescer no ambiente digital.
+
+                Sem templates. Cada projeto é pensado para representar a essência da marca e entregar resultados reais.
               </p>
             </div>
           </Reveal>
@@ -586,101 +581,6 @@ function PhoneMockup({
               alt={label}
               className="w-full h-auto block"
             />
-
-
-            {/* Fake page — hero */}
-            {/* <div
-              className="relative flex aspect-[9/16] flex-col justify-end p-3"
-              style={{
-                background: `
-                  radial-gradient(ellipse at 30% 20%, oklch(0.86 0.24 ${accent} / 0.28) 0%, transparent 60%),
-                  linear-gradient(160deg, oklch(0.22 0.01 ${accent}) 0%, oklch(0.12 0.005 150) 100%)
-                `,
-              }}
-            >
-              <div className="flex items-center justify-between text-[6px] uppercase tracking-widest text-white/50">
-                <span>Brand</span>
-                <span>Menu</span>
-              </div>
-              <div className="mt-auto space-y-1.5">
-                <div className="h-1 w-8 rounded-full" style={{ background: `oklch(0.86 0.24 ${accent})` }} />
-                <div className="h-2 w-[85%] rounded-sm bg-white/85" />
-                <div className="h-2 w-[65%] rounded-sm bg-white/70" />
-                <div className="h-1 w-[75%] rounded-sm bg-white/25" />
-                <div className="h-1 w-[55%] rounded-sm bg-white/25" />
-                <div
-                  className="mt-2 h-3 w-16 rounded-full"
-                  style={{ background: `oklch(0.86 0.24 ${accent})` }}
-                />
-              </div>
-            </div> */}
-
-            {/* Features grid */}
-            {/* <div className="grid grid-cols-2 gap-1.5 bg-[oklch(0.16_0.006_150)] p-3">
-              {Array.from({ length: 4 }).map((_, i) => (
-                <div
-                  key={i}
-                  className="aspect-square rounded-md border border-white/10 bg-white/5 p-1.5"
-                >
-                  <div
-                    className="h-1.5 w-1.5 rounded-sm"
-                    style={{ background: `oklch(0.86 0.24 ${accent})` }}
-                  />
-                  <div className="mt-1.5 h-1 w-3/4 rounded-sm bg-white/60" />
-                  <div className="mt-1 h-1 w-1/2 rounded-sm bg-white/25" />
-                </div>
-              ))}
-            </div> */}
-
-            {/* Image block */}
-            {/* <div
-              className="aspect-[9/6]"
-              style={{
-                background: `
-                  radial-gradient(circle at 70% 30%, oklch(0.86 0.24 ${accent} / 0.35) 0%, transparent 55%),
-                  linear-gradient(200deg, oklch(0.28 0.02 ${accent}) 0%, oklch(0.14 0.005 150) 100%)
-                `,
-              }}
-            /> */}
-
-            {/* Text block */}
-            {/* <div className="space-y-1.5 bg-background p-3">
-              <div className="h-1.5 w-10 rounded-sm" style={{ background: `oklch(0.86 0.24 ${accent})` }} />
-              <div className="h-1 w-full rounded-sm bg-white/25" />
-              <div className="h-1 w-[90%] rounded-sm bg-white/25" />
-              <div className="h-1 w-[70%] rounded-sm bg-white/25" />
-              <div className="h-1 w-[80%] rounded-sm bg-white/25" />
-            </div> */}
-
-            {/* Testimonial cards */}
-            {/* <div className="space-y-1.5 bg-[oklch(0.16_0.006_150)] p-3">
-              {Array.from({ length: 2 }).map((_, i) => (
-                <div key={i} className="rounded-md border border-white/10 bg-white/5 p-2">
-                  <div className="flex items-center gap-1.5">
-                    <div className="h-2 w-2 rounded-full" style={{ background: `oklch(0.86 0.24 ${accent})` }} />
-                    <div className="h-1 w-8 rounded-sm bg-white/60" />
-                  </div>
-                  <div className="mt-1.5 h-1 w-full rounded-sm bg-white/20" />
-                  <div className="mt-1 h-1 w-2/3 rounded-sm bg-white/20" />
-                </div>
-              ))}
-            </div> */}
-
-            {/* CTA footer */}
-            {/* 
-            <div
-              className="flex aspect-[9/7] flex-col items-center justify-center p-3 text-center"
-              style={{
-                background: `radial-gradient(ellipse at center, oklch(0.86 0.24 ${accent} / 0.25) 0%, transparent 70%), oklch(0.1 0.005 150)`,
-              }}
-            >
-              <div className="h-1.5 w-14 rounded-sm bg-white/85" />
-              <div className="mt-1 h-1.5 w-10 rounded-sm bg-white/60" />
-              <div
-                className="mt-2.5 h-3 w-16 rounded-full"
-                style={{ background: `oklch(0.86 0.24 ${accent})` }}
-              />
-            </div>*/}
           </div>
 
           {/* Notch */}
@@ -711,7 +611,7 @@ function Portfolio() {
   const projects = [
     { name: "Wr Studio Dental", category: "Landing Page", accent: "148", image: wrStudio, url: "https://www.tpdwellingtonrodrigues.com.br/", },
     { name: "Fernanda Moraes", category: "Landing Page", accent: "160", image: fernandaMoraes, url: "https://www.fernandamoraestpd.com.br/", },
-    { name: "Projeto 03", category: "E-commerce", accent: "140", image: wrStudio, },
+    { name: "Projeto 03", category: "Site", accent: "140", image: cavallini, url: "https://cavallini-k90ws915a-diegos-projects-0e198daf.vercel.app/", },
   ];
 
   return (
